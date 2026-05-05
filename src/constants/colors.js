@@ -1,0 +1,17 @@
+export const COLORS = {
+  background: '#FAFAF8',
+  surface: '#F2F0EB',
+  textPrimary: '#1A1814',
+  textSecondary: '#8C8880',
+  accentGold: '#C9A84C',
+  ride: '#4A90D9',
+  dining: '#E8734A',
+  show: '#9B6DD6',
+  meet_greet: '#E85D8A',
+  experience: '#C9A84C',
+  pinInactive: '#C4C0B8',
+  error: '#D94A4A',
+  success: '#4CAF50',
+  warning: '#D8A23A',
+  white: '#FFFFFF',
+};
