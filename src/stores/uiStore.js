@@ -1,0 +1,20 @@
+import {create} from 'zustand';
+export const useUiStore = create((set) => ({
+  activeSheet: null,
+  sheetMode: null,
+  selectedPinId: null,
+  mapFilter: 'all',
+  myListOnly: false,
+  listGrouping: 'category',
+  searchQuery: '',
+  searchFilter: 'all',
+  browseMode: 'search',
+  openSheet: (item, mode = 'detail') => set({activeSheet: item, sheetMode: mode, selectedPinId: item?.id || item?.attractionId || null}),
+  closeSheet: () => set({activeSheet: null, sheetMode: null, selectedPinId: null}),
+  setMapFilter: (mapFilter) => set({mapFilter}),
+  setMyListOnly: (myListOnly) => set({myListOnly}),
+  setListGrouping: (listGrouping) => set({listGrouping}),
+  setSearchQuery: (searchQuery) => set({searchQuery}),
+  setSearchFilter: (searchFilter) => set({searchFilter}),
+  setBrowseMode: (browseMode) => set({browseMode}),
+}));
